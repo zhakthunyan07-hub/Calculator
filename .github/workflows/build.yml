@@ -14,7 +14,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
-        python-version: '3.9'
+        python-version: '3.10'
 
     - name: Install System Dependencies
       run: |
@@ -38,8 +38,7 @@ jobs:
         pip install --upgrade pip
         pip install "setuptools<=65.5.0"
         pip install cython==0.29.33
-        pip install buildozer
-        pip install --upgrade git+https://github.com/kivy/buildozer.git@master
+        pip install buildozer==1.5.0
 
     - name: Build with Buildozer
       run: |
@@ -50,3 +49,4 @@ jobs:
       with:
         name: package
         path: bin/*.apk
+
