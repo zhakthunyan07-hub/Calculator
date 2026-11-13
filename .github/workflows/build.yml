@@ -31,7 +31,8 @@ jobs:
             libncursesw5-dev \
             libtinfo5 \
             libffi-dev \
-            libssl-dev
+            libssl-dev \
+            openjdk-17-jdk
 
     - name: Install Buildozer, Cython and Setuptools
       run: |
@@ -49,3 +50,4 @@ jobs:
       with:
         name: package
         path: bin/*.apk
+
