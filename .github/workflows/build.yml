@@ -14,7 +14,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
-        python-version: '3.10'
+        python-version: '3.9'
 
     - name: Install System Dependencies
       run: |
@@ -33,9 +33,10 @@ jobs:
             libffi-dev \
             libssl-dev
 
-    - name: Install Buildozer and Cython
+    - name: Install Buildozer, Cython and Setuptools
       run: |
         pip install --upgrade pip
+        pip install "setuptools<=65.5.0"
         pip install cython==0.29.33
         pip install buildozer
         pip install --upgrade git+https://github.com/kivy/buildozer.git@master
