@@ -91,7 +91,7 @@ android.min_api = 21
 android.sdk = 31
 
 # (str) Android NDK version to use
-android.ndk = r25b
+android.ndk = r23b
 
 # (int) Android NDK API to use. If not specified, will be equal to android.min_api or android.api depending on the sdk version
 #android.ndk_api = 
@@ -113,3 +113,4 @@ android.accept_sdk_license = True
 
 # (str) Python for android (p4) git clone or branch
 p4 = 0
+
